@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script  src="{% static 'watch/js/jquery.fancybox.min.js' %}"></script>
+    <script  src="{% static 'watch/js/slick.min.js' %}"></script> 
+    <script  src="{% static 'watch/js/main.js' %}"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wtch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  
+    
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="{% static 'watch/css/reset.css' %}">
+  <link rel="stylesheet" href="{% static 'watch/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'watch/css/style.css' %}">
+
+
+ 
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="hooter">
+        <img src="{% static 'watch/img/Burger.svg' %}" alt="" class="hooter-burger">
+        <div class="hooter-left">
+
+          <a href="#" class="hooter-logo">
+            <h1 class="hooter-logo-text">Wtch</h1>
+          </a>
+        </div>
+
+        <div class="hooter-right">
+          <ul class="hooter-navs">
+            
+            <li class="hooter-navs-text"> 
+                <form action="{% url 'about' %}" target="_blank">
+                <button>О нас</button>
+               </form></li>
+
+            <li class="hooter-navs-text"> 
+                <form action="{% url 'news_home' %}" target="_blank">
+                <button>Новости</button>
+               </form></li>
+               
+            <li class="hooter-navs-text">Проекты</li>
+            <li class="hooter-navs-text">Этапы</li>
+            <li class="hooter-navs-text">Отзывы</li>
+            <li class="hooter-navs-text">Контакты</li>
+            <span class="hooter-vector-search"></span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="main">
+    <div class="container main-container">
+      <div class="main-slider">
+        <div class="main-slider-box">
+          <img src="{% static 'watch/img/second.png' %}" alt="" class="main-first">
+        </div>
+        <div class="main-slider-box">
+          <img src="{% static 'watch/img/first.jpg.png' %}" alt="" class="main-second">
+        </div>
+        <div class="main-slider-box">
+          <img src="{% static 'watch/img/thirddd.jpg' %}" alt="" class="main-third">
+        </div>
+      </div>
+
+      <div class="main-text-block">
+        <h1 class="main-title">Выбери <br> свое <br> время</h1>
+
+        <a href="#" class="main-button">Заказать часы</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="catalog">
+    <div class="container">
+      <h1 class="catalog-text">Каталог</h1>
+      <div class="slider-ctlg-box">
+        <div class="ctlg-box">
+          <div class="img-box">
+            <img src="{% static 'watch/img/tissot-box.webp' %}" alt="" class="watch-ctlg">
+          </div>
+  
+          <h2 class="watch-name">TISSOT SUPERSPORT CHRONO</h2>
+  
+          <p class="watch-price">$ 49.99</p>
+  
+  
+        </div>
+       </div>
+
+      <div class="slider-ctlg-box">
+        <div class="ctlg-box">
+          <div class="img-box">
+            <img src="{% static 'watch/img/tissot-box.webp' %}" alt="" class="watch-ctlg">
+          </div>
+  
+          <h2 class="watch-name">TISSOT SUPERSPORT CHRONO</h2>
+  
+          <p class="watch-price">$ 49.99</p>
+  
+  
+        </div>
+       </div>
+
+       <div class="slider-ctlg-box">
+        <div class="ctlg-box">
+          <div class="img-box">
+            <img src="{% static 'watch/img/tissot-box.webp' %}" alt="" class="watch-ctlg">
+          </div>
+  
+          <h2 class="watch-name">TISSOT SUPERSPORT CHRONO</h2>
+  
+          <p class="watch-price">$ 49.99</p>
+  
+  
+        </div>
+       </div>
+
+       <div class="slider-ctlg-box">
+        <div class="ctlg-box">
+          <div class="img-box">
+            <img src="{% static 'watch/img/tissot-box.webp' %}" alt="" class="watch-ctlg">
+          </div>
+  
+          <h2 class="watch-name">TISSOT SUPERSPORT CHRONO</h2>
+  
+          <p class="watch-price">$ 49.99</p>
+  
+  
+        </div>
+       </div>
+
+
+     <div class="slider-ctlg-box">
+      <div class="ctlg-box">
+        <div class="img-box">
+          <img src="{% static 'watch/img/tissot-box.webp' %}" alt="" class="watch-ctlg">
+        </div>
+
+        <h2 class="watch-name">TISSOT SUPERSPORT CHRONO</h2>
+
+        <p class="watch-price">$ 49.99</p>
+
+
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-first-block">
+        <a href="#" class="footer-logo">
+          <h1 class="hooter-logo-text footer-logo-text">LuxWatch</h1>
+        </a>
+        <ul class="footer-navs">
+          <li class="footer-navs-text">О нас</li>
+          <li class="footer-navs-text">Каталог</li>
+          <li class="footer-navs-text">Отзывы</li>
+          <li class="footer-navs-text">Контакты</li>
+
+        </ul>
+        <div class="footer-social-links">
+          <a href="" class="icon-fb"><img src="{% static 'watch/img/icons8-tiktok-96.svg' %}" class="icon-1"></img></a>
+          <a href="" class="icon-vk"><img src="{% static 'watch/img/icons8-telegram-app-96.svg' %}" class="icon-2"></img></a>
+          <a href="" class="icon-ig"><img src="{% static 'watch/img/icons8-instagram-96.svg' %}" class="icon-3"></img></a>
+        </div>
+      </div>
+      <div class="footer-second-block">
+        <div class="footer-title">Оставить заявку</div>
+        <form action="" class="footer-form">
+          <input class="input-name" type="name" placeholder="Фамилия, имя и отчество*">
+          <input class="input-email" type="E-mail" placeholder="E-mail*">
+          <input class="input-text" type="text" placeholder="Сообщение">
+          <div class="footer-btn-checkbox">
+            <button class="footer-button">Отправить данные</button>
+            <div class="checkbox-block">
+              <input class="input-checkbox" type="checkbox">
+              <div class="checkbox-text">Согласен на обработку данных</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer-last-block">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+        факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
+        развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов)
+        участие в формировании стандартных подходов.
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="{% static 'watch/js/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'watch/js/jquery.min.js' %} "></script>
+  <script src="{% static 'watch/js/slick.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

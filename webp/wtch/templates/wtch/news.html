@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="{% static 'wtch/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'wtch/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'wtch/css/news.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hooter">
+                <div class="hooter-body">
+                    <div class="hooter-content">
+                        <div class="hooter-logo">
+                            <img src="{% static 'wtch/img/photo_2023-03-25_23-00-59.jpg' %}" alt="" class="hooter-img">
+                        </div>
+                        <div class="hooter-navs">
+                            <a href="{% static 'wtch/index.html' %}" class="hooter-link">
+                                <li class="hooter-li">Главная</li>
+                            </a>
+                            <a href="{% static 'wtch/about.html' %}" class="hooter-link">
+                                <li class="hooter-li">О нас</li>
+                            </a>
+                            <a href="#" class="hooter-link">
+                                <li class="hooter-li">Контакты</li>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-news">
+        <div class="container">
+            <div class="news-body">
+                <div class="news-content">
+                    <h1 class="news-text">NEWS</h1>
+                    <div class="news-descr">
+                        новое поступление в нашем магазине
+                    </div>
+                    <div class="news-slider">
+                        <div href="#" class="news-slide-img">
+                            <img src="{% static 'wtch/img/news-slide-2.jpg' %}" alt="" class="slider-photo">
+                        </div>
+                        <div href="#" class="news-slide-img">
+                            <img src="{% static 'wtch/img/news-slide-3.jpg' %}" alt="" class="slider-photo">
+                        </div>
+                        <div href="#" class="news-slide-img">
+                            <img src="{% static 'wtch/img/news-slide-4.jpg' %}" alt="" class="slider-photo">
+                        </div>
+                        <div href="#" class="news-slide-img">
+                            <img src="{% static 'wtch/img/news-slide-5.jpg' %}" alt="" class="slider-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="news-box">
+        <div class="container">
+            <div class="box-body">
+                <div class="box-title">НОВИНКИ</div>
+                <div class="box-content">
+                {% for nude in nudes %}   
+                    <a href="" class="news-box-1">
+                        <img src="{{ nude.img.url }}" alt="" class="box-img">
+                        <p class="box-data">{{ nude.date }}</p>
+                        <div class="box-img-title"> {{ nude.title }} </div>
+                        <p class="box-descr">{{ nude.anons }}</p>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="{% static 'wtch/js/jquery.fancybox.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'wtch/js/slick.min.js' %}"></script>
+    <script defer src="{% static 'wtch/js/news.js' %}"></script>
+</body>
+
+</html>

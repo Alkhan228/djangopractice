@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "MainJS",
+			"path": "../../../MainJS"
+		},
+		{
+			"name": "carstore",
+			"path": "../../../htmlcss/carstore"
+		},
+		{
+			"name": "evklid",
+			"path": ".."
+		},
+		{
+			"name": "js-for-html-code-start",
+			"path": "../../../../../../../js-for-html-code-start"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "evklid"
+	}
+}

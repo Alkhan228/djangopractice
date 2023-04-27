@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E9E9E9;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* hooter */
+.hooter-logo-text {
+    width: 200px;
+    margin-left: 20px;  
+}
+
+.header {
+    height: 100px;
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1770px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-container {
+    background-color: #fff;
+}
+
+.hooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hooter-left {}
+
+.hooter-logo {}
+
+.hooter-logo-image {}
+
+.hooter-right {
+    width: 600px;
+}
+
+.about-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about-uss:hover{
+    color: #8400ff;
+    transition: 0.3s;
+}
+.hooter-navs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hooter-navs-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+}
+
+.hooter-navs-text:not(:last-child) {
+    margin-right: 85px;
+}
+
+.hooter-vector-search {
+    background: url('/evklid/img/Search.svg');
+    width: 25px;
+    height: 25px;
+}
+
+
+/* MAIN */
+
+
+.main-news {
+    
+}
+
+.container {}
+
+.news-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.news-content {}
+
+.news-text {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+
+}
+
+.news-slider {
+    position: relative;
+    max-width: 1210px;
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.news-descr {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
+.news-slide-img {
+    width: 100%;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    padding-top: 550px;
+}
+.slick-dots li {
+    list-style: none;
+    font-size: 0;
+    margin: 0 10px;
+}
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.slick-prev{
+}
+
+.slick-prev:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+   
+}
+.slick-next {
+}
+.slick-next:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.slider-photo {}
+
+
+/* НОВИНКИ */
+
+.news-box {}
+
+.container {}
+
+.box-body {
+    background-color: #fff;
+}
+
+.box-title {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 34px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 40px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.box-title::before {
+    content: '';
+    width: 7px;
+    height: 37px;
+    background-color: #6E1600;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+
+.box-title::after {
+    content: '';
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    background-color: #6E1600;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-left: solid 20px #fff;
+    margin-right: -100%;
+    margin-top: -7px;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.news-box-1 {
+    width: 25em;
+}
+
+.box-img {
+    width: 25em;
+    margin-bottom: 20px;
+}
+
+.box-data {
+    color: #9B9B9B;
+    margin-bottom: 20px;
+}
+
+.box-img-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.box-descr {
+    font-family: 'Roboto';
+    font-weight: 50;
+    font-size: 16px;
+    margin-bottom: 20px;
+}

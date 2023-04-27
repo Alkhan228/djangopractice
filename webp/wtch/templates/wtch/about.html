@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClockWatch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="{% static 'wtch/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'wtch/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'wtch/css/about.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="hooter">
+                <div class="hooter-left">
+
+                    <a href="#" class="hooter-logo">
+                        <img src="{% static 'wtch/img/photo_2023-03-25_23-00-59.jpg' %}" alt=""
+                            class="hooter-logo-text">
+                    </a>
+                </div>
+
+                <div class="hooter-right">
+                    <ul class="hooter-navs">
+                        <a href="{% url 'main'%}" class="about-link">
+                            <li id="about-uss" class="hooter-navs-text">Главная</li>
+                        </a>
+                        <a href="{% url 'about' %}" class="about-link">
+                            <li id="about-uss" href="/about.html" class="hooter-navs-text">О нас</li>
+                        </a>
+                        <a href="{% url 'news' %}" class="about-link">
+                            <li id="about-uss" class="hooter-navs-text">Новости</li>
+                        </a>
+                        <a href="" class="about-link">
+                            <li id="about-uss" class="hooter-navs-text">Контакты</li>
+                        </a>
+                        <span class="hooter-vector-search"></span>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <section class="about">
+        <div class="container">
+            <div class="about-body">
+                <div class="about-content">
+                    <h1 class="about-us">О НАС</h1>
+                    <div class="about-us-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, saepe iure hic soluta itaque
+                        non incidunt fugit expedita, tempora, dicta est illo illum vitae eaque officia vero magni
+                        adipisci! Totam?
+                        Possimus dolore facere magnam. Qui deserunt optio error voluptatem perspiciatis officia dicta
+                        facere, incidunt, ipsam ab quod ea animi inventore. Labore voluptas omnis ad mollitia, ab
+                        doloremque quos repellat neque.
+                        Facilis asperiores ipsum, assumenda animi odit eveniet voluptates ex! Accusantium temporibus
+                        incidunt quas sapiente eligendi at dolorum facilis, recusandae reiciendis nemo, eos possimus
+                        amet nesciunt dignissimos consectetur fugit, molestias velit!
+                        Quasi nemo est ex provident unde beatae, consequuntur dolor amet rerum magnam illum libero iste
+                        veritatis sit eius fugit ad nostrum aliquid porro atque veniam asperiores iusto placeat! Rerum,
+                        praesentium.
+                        Perferendis ea exercitationem quasi explicabo error velit rem cum voluptas sint esse repellendus
+                        consequatur incidunt, laborum distinctio molestias eos cumque veniam blanditiis culpa quae
+                        obcaecati dicta eaque modi. Quis, harum.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership">
+        <div class="container">
+
+            <div class="leadership-body">
+                <div class="leadership-content">
+                    <h1 class="lship-text">leadership</h1>
+                </div>
+                <div class="lship-boxs">
+                    {% for a in data %}
+                    <div href="#" id="open-leader-1" class="lship-link">
+                        <img src="{{ a.img.url }}" alt="" class="lship-photo">
+                        <div class="lship-name">{{a.surname}} {{a.name}} </div>
+                        <div class="lship-place"> {{a.position}} </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="{% static 'wtch/js/jquery.fancybox.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'wtch/js/slick.min.js' %}"></script>
+    <script defer src="{% static 'wtch/js/main.js' %}"></script>
+    <script src="{% static 'wtch/js/about.js' %}"></script>
+</body>
+
+</html>
